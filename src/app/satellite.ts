@@ -1,5 +1,3 @@
-
-
 export class Satellite {
 
 	name: string;

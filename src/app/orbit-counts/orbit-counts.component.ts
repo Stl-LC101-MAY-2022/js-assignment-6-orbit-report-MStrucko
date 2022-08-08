@@ -9,9 +9,6 @@ import { Satellite } from '../satellite';
 export class OrbitCountsComponent implements OnInit {
 
 	@Input() satellites: Satellite[];
-
-	/* Bonus 2b Note to Self: Had to add this line below to create a types array to link to my *ngFor="let type of types" 
-	loop in the orbit-counts.component.html file to actually display the {{type}} counts. */
 	types: string[] = ['Communication', 'Positioning', 'Probe', 'Space Debris', 'Space Station', 'Telescope'];
 
   constructor() { }
