@@ -8,14 +8,9 @@ import { Satellite } from '../satellite';
 })
 export class OrbitListComponent implements OnInit {
   @Input() satellites: Satellite[];
-
   constructor() { }
 
   ngOnInit() {
-  }
-
-  objectKeys(satellite: object): string[] {
-    return Object.keys(satellite);
   }
 
   sort(column: string): void {
@@ -29,4 +24,5 @@ export class OrbitListComponent implements OnInit {
        return 0;
     });
  }
+
 }
